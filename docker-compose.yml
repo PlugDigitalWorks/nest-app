@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nestjs:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - '3000:3000'
+    # env_file:
+    #   - '/var/env-files/rm-yemek.env'
+    restart: always
